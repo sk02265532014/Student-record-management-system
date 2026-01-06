@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Record Management System</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Student Record Management System</h1>
+    <p>Simple CRUD app using JavaScript array and localStorage.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Form: Add / Edit Student -->
+    <section id="student-form-section">
+      <h2>Add / Edit Student</h2>
+
+      <form id="student-form">
+        <!-- Roll Number -->
+        <div class="form-group">
+          <label for="roll">Roll Number</label>
+          <input type="number" id="roll" name="roll" required />
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Department / Branch -->
+        <div class="form-group">
+          <label for="department">Department / Branch</label>
+          <select id="department" name="department">
+            <option value="">Select</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+          </select>
+        </div>
+
+        <!-- Semester -->
+        <div class="form-group">
+          <label for="semester">Semester</label>
+          <select id="semester" name="semester">
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+
+        <!-- Marks / CGPA -->
+        <div class="form-group">
+          <label for="cgpa">Marks / CGPA</label>
+          <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" />
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-actions">
+          <button type="submit" id="save-btn">Save Student</button>
+          <button type="reset" id="reset-btn">Clear Form</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Controls: Search, Filter, Sort -->
+    <section id="controls-section">
+      <h2>Search, Filter & Sort</h2>
+
+      <div class="controls-row">
+        <!-- Search by roll -->
+        <div class="control-group">
+          <label for="search-roll">Search by Roll</label>
+          <input type="number" id="search-roll" placeholder="Enter roll number" />
+        </div>
+
+        <!-- Search by name -->
+        <div class="control-group">
+          <label for="search-name">Search by Name</label>
+          <input type="text" id="search-name" placeholder="Enter name" />
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <!-- Filter by department -->
+        <div class="control-group">
+          <label for="filter-dept">Filter by Department</label>
+          <select id="filter-dept">
+            <option value="">All</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="ME">ME</option>
+            <option value="CE">CE</option>
+          </select>
+        </div>
+
+        <!-- Filter by semester -->
+        <div class="control-group">
+          <label for="filter-sem">Filter by Semester</label>
+          <select id="filter-sem">
+            <option value="">All</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <!-- Sort buttons -->
+        <div class="control-group">
+          <span>Sort By:</span>
+          <button type="button" id="sort-roll-btn">Roll Number</button>
+          <button type="button" id="sort-cgpa-btn">Marks / CGPA</button>
+        </div>
+
+        <!-- Extra actions -->
+        <div class="control-group">
+          <button type="button" id="clear-storage-btn">Clear All Records</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table: Student List -->
+    <section id="table-section">
+      <h2>Student List</h2>
+
+      <table id="students-table">
+        <thead>
+          <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Semester</th>
+            <th>Marks / CGPA</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JavaScript will insert rows here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
