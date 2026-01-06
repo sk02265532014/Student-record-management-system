@@ -4,12 +4,12 @@
 A simple web app to manage student records using **HTML, CSS, and JavaScript**.  
 It focuses on basic CRUD operations, array handling, and localStorage.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project is a frontend‑only Student Record Management System.  
 It lets you add, view, update, delete, search, filter, and sort student records stored in a JavaScript array and saved in the browser using localStorage. [web:109][web:111]
 
-## 🧱 Features
+## Features
 
 - Create: Add a new student with roll, name, department, semester, and marks/CGPA  
 - Read: Display all students in a simple HTML table  
@@ -26,13 +26,13 @@ It lets you add, view, update, delete, search, filter, and sort student records 
   - By marks / CGPA (descending)  
 - Data Persistence: All data is stored in `localStorage`, so records stay after page refresh [web:93][web:103]
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML – structure and layout  
 - CSS – basic styling for form and table  
 - JavaScript – CRUD logic, search/filter/sort, and localStorage [web:109]
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 srms-project/
