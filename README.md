@@ -81,7 +81,8 @@ This project demonstrates core concepts of **CRUD operations, DOM manipulation, 
 
 _Add screenshots of your project here for better presentation_
 
----
+---<img width="1567" height="1012" alt="Screenshot 2026-04-02 131428" src="https://github.com/user-attachments/assets/ccc27dee-7947-4794-84fa-45a658f52619" />
+
 
 ## 📖 Learning Outcome
 
