@@ -1,6 +1,6 @@
 # 📚 Student Record Management System
 
-A simple and efficient **Student Record Management System** built using **HTML, CSS, and JavaScript**.  
+A simple and efficient **Student Record Management System** built using **HTML, CSS, and JavaScript**. 
 This project demonstrates core concepts of **CRUD operations, DOM manipulation, and localStorage** in a clean and user-friendly interface.
 
 ---
