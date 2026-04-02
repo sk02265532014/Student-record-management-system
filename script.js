@@ -6,7 +6,7 @@ let students = [];
 // Track which student is being edited (index in array), null = add mode
 let editIndex = null;
 
-// ---------------- DOM Elements ----------------
+// ---------------- DOM Elements ---------------
 
 // Form inputs
 const studentForm = document.getElementById("student-form");
